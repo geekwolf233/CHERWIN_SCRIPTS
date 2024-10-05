@@ -299,7 +299,7 @@ class RUN:
         response = self.do_request(url, data=json_data)
         # print(response)
         if response.get('success') == True:
-            goodsList = response["obj"][2]["goodsList"]
+            goodsList = response["obj"][1]["goodsList"]
             for goods in goodsList:
                 exchangeTimesLimit = goods['exchangeTimesLimit']
                 if exchangeTimesLimit >= 7:
